@@ -1,0 +1,65 @@
+ @import 'https://fonts.googleapis.com/css?family=Gochi+Hand';
+
+// $primary-color: #477A32;
+// $second-color: #445555;
+$primary-color: #66AA77;
+$second-color: #373277;
+$board-size: 276px;
+$cell-size: 90px;
+
+body {
+	background: $primary-color;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	font-weight: 100;
+}
+
+#tic-tac-toe {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h2 {
+	font-family: 'Gochi Hand', sans-serif;
+	font-size: 30px;
+}
+
+button {
+	cursor: pointer;
+}
+
+#ttt-board {
+	width: $board-size;
+	height: $board-size;
+	margin-top: 25px;
+
+	& > .ttt-cell {
+		background: $second-color;
+		width: $cell-size;
+		height: $cell-size;
+		float: left;
+		margin: 1px;
+
+	    & > div {
+	    	font-family: 'Gochi Hand', sans-serif;
+			font-size: 64px;
+			position: relative;
+		  	top: 50%;
+		  	transform: translateY(-50%);
+	    }
+	}
+}
+
+#ttt-end-game {
+	font-size: 20px;
+	padding: 20px;
+}
+
+#ttt-credits {
+	font-size: 10px;
+	padding: 10px;
+}
+
